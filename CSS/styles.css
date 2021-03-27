@@ -46,7 +46,11 @@ h1,h2,h3,h4,h5,h6{font-family: arial;font-size: 1.0rem;}
     top: 4px;
 
   }/* a hover background-color change*/
- 
+  .navbar-toggler-icon {
+    width: 0.5em;
+    
+  }
+
   #micon .navbar-nav .nav-item .nav-link:hover {
 background-color:rgb(3, 3, 82);/* color: white;*/
 }
@@ -169,8 +173,10 @@ a.nav-link:hover{
 --------------------------------------------------*/
 
 .DarkBlock {
-    background-color: hsl(220, 88%, 19%) !important;
+    background-color: hsl(0, 2%, 19%) !important;
     color: #F1F3F5 !important;
+    ;
+
 }
 
 
@@ -181,7 +187,7 @@ a.nav-link:hover{
 .PageContent {
     background-color: #F1F3F5;
     font-family: 'Montserrat', sans-serif;
-    color: #051638;
+    color: rgb(80, 12, 12);
     max-width: 1080px;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -199,14 +205,16 @@ a.nav-link:hover{
     width: 100%;
     margin-top: 5px !important;
     margin-bottom: 0px !important;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: auto;
     justify-content: space-around;
     display: inline-flex;
+    background-color:black;
 }
 .menuSpan{
     font-size: 20px;
     font-weight: bold;
+    color: rgb(112, 21, 21);
     
 }/*My created class*/
 
@@ -216,6 +224,7 @@ a.nav-link:hover{
     margin: 15px 0px;
     text-align: center;
     height: 150px;
+    ;
 }
 
 .MenuBlockLink {
@@ -230,7 +239,7 @@ a.nav-link:hover{
 }
 
 .MenuCenterVertical {
-    line-height:150px;
+    line-height:10px;
 }
 
 .PopupClass {
@@ -261,7 +270,7 @@ a.nav-link:hover{
     line-height: 16px; 
     border-radius: 5px; 
     border-width: 4px; 
-    border-color: #9af325; 
+    border-color:black; 
     border-style: solid;
     cursor: pointer;
     margin-top: 15px;
@@ -295,7 +304,9 @@ a.nav-link:hover{
     vertical-align: middle;
     line-height: normal;
     display: inline-block;
+    margin-top: 30px;
 }
+
 
 
 
@@ -304,18 +315,26 @@ a.nav-link:hover{
 /*---------------Product cart three colm section end------------*/
 
 /*---------------Social media start-----------------------*/
-#social-media .container-fluid #social-icon{
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
+#social-media .container-fluid{
+    background-color: #f8f4f4;
+    ;
+}
+.socialIcon{
+    width: 480px;
     text-align: center;
+}
+#social-media .container-fluid #social-icon{
+    width: auto;
+    height: auto;
+    margin: 1px;
+    padding: 10px;
+   
     
 }
 #social-media .container-fluid #social-icon h2{
     text-transform: uppercase;
     font-size: 2vw;
-    color: black;
+    color: rgb(133, 15, 15);
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
    
@@ -335,12 +354,14 @@ a.nav-link:hover{
 }
 
 /* Add a hover effect */
-#social-media .container-fluid >  a.fa:hover{
-    opacity: 0.1;
-    color: #d5d5d5;
+#social-media .container-fluid  >  a.hoverable.fa:hover{
+    
+    color: #3c30ac;
+    transition: 1sec;
 }
 #social-icon{
     opacity: 0.9;
+    
 }
  /* Set a specific color for each brand */
   .fa-facebook{
