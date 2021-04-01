@@ -2,9 +2,14 @@
 *box-sizing:border-box;}
 body{
     font-family: arial;font-size: 15px;line-height: 25px;color: #333;
-position: relative; height: 100%;top: 0px;margin:auto; border: solid gray;box-shadow: 5px;}
+position: relative; height: 100%;top: 0px;margin:auto; border: solid gray;box-shadow: 5px;
+}
 h1,h2,h3,h4,h5,h6{font-family: arial;font-size: 1.0rem;}
 #KBMains{text-align: center;font-size: 2rem;color: chocolate;}
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /*------ header section start--------*/
 
@@ -33,7 +38,7 @@ h1,h2,h3,h4,h5,h6{font-family: arial;font-size: 1.0rem;}
 }
 
 .nav-item{
-    padding-left: 4em;
+    padding-left: 3em;
 }
 
 .container #micon{
@@ -71,7 +76,7 @@ padding: 0 10px;
  .my-nav .navbar-nav a {
     color: white;
     font-size: 1rem;
-    font-family: cursive;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -173,9 +178,10 @@ a.nav-link:hover{
 --------------------------------------------------*/
 
 .DarkBlock {
-    background-color: hsl(0, 2%, 19%) !important;
+    background-color: hsl(0, 71%, 22%) !important;
     color: #F1F3F5 !important;
-    ;
+    max-width: 1080px;
+    display: contents;
 
 }
 
@@ -185,7 +191,7 @@ a.nav-link:hover{
 }
 
 .PageContent {
-    background-color: #F1F3F5;
+    background-color: #e5eaf0;
     font-family: 'Montserrat', sans-serif;
     color: rgb(80, 12, 12);
     max-width: 1080px;
@@ -203,7 +209,7 @@ a.nav-link:hover{
 .Margins{
 
     width: 100%;
-    margin-top: 5px !important;
+    margin-top: 0px !important;
     margin-bottom: 0px !important;
     margin-left: 0px;
     margin-right: auto;
@@ -235,7 +241,7 @@ a.nav-link:hover{
     width:100%;
     height:100%;
     position:center;
-    background-color: rgba(102, 92, 92, 0.52);
+    background-color: rgba(12, 11, 11, 0.52);
 }
 
 .MenuCenterVertical {
@@ -245,7 +251,7 @@ a.nav-link:hover{
 .PopupClass {
     display: none;
     background-color: #efeaf1;
-    color: #090c13;
+    color:black;
     margin-right: 25px;
 }
 .PopupTitle{
@@ -293,7 +299,7 @@ a.nav-link:hover{
     width:100%;
     height:100%;
     position:center;
-    background-color: rgba(51, 41, 41, 0);
+    background-color: rgba(24, 23, 23, 0);
 }
 
 .MenuBlockText {
@@ -425,5 +431,32 @@ hr.light-100{
      text-align: center;
  }
 /*---------------- Footer end here---------------------*/
+
+/*----------------------Responsive design start-------------*/
+
+@media only screen and (max-width: 300px){
+    #my-footer>h5,p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .socialIcon{
+        width: 308px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    #social-media .container-fluid #social-icon h2{
+font-size: 4vw;
+    }
+}
+@media only screen and (max-width: 400px){
+#copyright{
+    font-size: 14px;
+}
+}
+/*----------------------Responsive design start-------------*/
+
 
 
